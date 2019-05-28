@@ -18,4 +18,14 @@ public class User extends BaseEntity {
 
     private Role role;
 
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + this.getId() + '\'' +
+                "login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                ", role=" + role +
+                '}';
+    }
 }
